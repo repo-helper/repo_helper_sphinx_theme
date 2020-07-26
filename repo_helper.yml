@@ -1,0 +1,12 @@
+# Configuration for 'repo_helper' (https://github.com/domdfcoding/repo_helper
+---
+modname: "repo_helper_sphinx_theme"
+copyright_years: "2020"
+author: "Dominic Davis-Foster"
+email: "dominic@davis-foster.co.uk"
+username: "domdfcoding"
+version: "0.0.0"
+license: "BSD License"
+short_desc: "Sphinx Theme for repo_helper."
+
+enable_conda: False
