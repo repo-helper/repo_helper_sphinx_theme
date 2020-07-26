@@ -6,7 +6,36 @@ author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
 username: "domdfcoding"
 version: "0.0.0"
-license: "BSD License"
+license: "BSD"
 short_desc: "Sphinx Theme for repo_helper."
 
+sphinx_html_theme: alabaster
+
 enable_conda: False
+enable_tests: False
+
+manifest_additional:
+  - "recursive-include repo_helper_sphinx_theme *.*"
+  - "recursive-exclude repo_helper_sphinx_theme .*.swp"
+
+# Versions to run tests for
+python_versions:
+  - '3.6'
+  - '3.7'
+  - '3.8'
+  - '3.9-dev'
+
+
+classifiers:
+  - 'Development Status :: 4 - Beta'
+#  - "Development Status :: 5 - Production/Stable"
+#  - "Development Status :: 6 - Mature"
+#  - "Development Status :: 7 - Inactive"
+  - 'Intended Audience :: Developers'
+  - 'Topic :: Utilities'
+  - "Intended Audience :: Developers"
+  - "Topic :: Documentation"
+  - "Topic :: Software Development :: Documentation"
+
+exclude_files:
+  - setup

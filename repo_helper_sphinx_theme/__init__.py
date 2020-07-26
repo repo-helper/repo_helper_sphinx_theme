@@ -43,6 +43,10 @@ Sphinx Theme for repo_helper.
 # stdlib
 import os
 
+# 3rd party
+import alabaster
+from alabaster import get_path, update_context
+
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
 
@@ -51,20 +55,9 @@ __version__: str = "0.0.0"
 __email__: str = "dominic@davis-foster.co.uk"
 
 
-def get_path():
-	"""
-    Shortcut for users whose theme is next to their conf.py.
-    """
-	# Theme directory is defined as our parent directory
-	return os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-
-
-def update_context(app, pagename, templatename, context, doctree):
-	context["repo_helper_sphinx_theme_version"] = __version__
-
-
 def setup(app):
 	# add_html_theme is new in Sphinx 1.6+
+	alabaster.setup(app)
 	if hasattr(app, "add_html_theme"):
 		theme_path = os.path.abspath(os.path.dirname(__file__))
 		app.add_html_theme("repo_helper_sphinx_theme", theme_path)

@@ -95,19 +95,50 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 
 .. end shields
 
-|
-
 Installation
---------------
+---------------
 
 .. start installation
 
-``repo_helper_sphinx_theme`` can be installed from PyPI.
+.. tabs::
 
-To install with ``pip``:
+	.. tab:: from PyPI
 
-.. code-block:: bash
+		.. prompt:: bash
 
-	$ python -m pip install repo_helper_sphinx_theme
+			python3 -m pip install repo_helper_sphinx_theme --user
+
+
+	.. tab:: from GitHub
+
+		.. prompt:: bash
+
+			python3 -m pip install git+https://github.com/domdfcoding/repo_helper_sphinx_theme@master --user
 
 .. end installation
+
+Customisation
+-----------------
+
+``repo_helper_sphinx_theme`` is based on the `alabaster <https://github.com/bitprophet/alabaster/>`_ theme..
+See https://alabaster.readthedocs.io/en/latest/customization.html for information on customising the theme.
+
+.. toctree::
+	:hidden:
+
+	Home<self>
+
+.. toctree::
+	:maxdepth: 3
+	:caption: Documentation
+
+	contributing
+	Source
+
+.. start links
+
+View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
+
+`Browse the GitHub Repository <https://github.com/domdfcoding/repo_helper_sphinx_theme>`__
+
+.. end links

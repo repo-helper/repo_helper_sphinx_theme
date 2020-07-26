@@ -39,9 +39,9 @@ The bare minimum required to install Alabaster is as follows:
 
 * **Either way**, add an explicit ``html_sidebars`` setting so Alabaster's
   customized sidebar templates are loaded:
-   
+
    .. code-block:: python
-    
+
         html_sidebars = {
             '**': [
                 'about.html',

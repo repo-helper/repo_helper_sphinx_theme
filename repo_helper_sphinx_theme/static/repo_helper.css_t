@@ -68,7 +68,8 @@ body {
 
 
 div.document {
-    width: {{ theme_page_width }};
+    width: 100%;
+	max-width: 1400px;
     margin: 30px auto 0 auto;
 }
 
@@ -95,6 +96,7 @@ div.body {
     background-color: {{ theme_body_bg  }};
     color: {{ theme_body_text }};
     padding: 0 30px 0 30px;
+	max-width: 1100px;
 }
 
 div.body > .section {
@@ -165,13 +167,16 @@ div.sphinxsidebar h4 {
     font-family: {{ theme_head_font_family }};
     color: {{ theme_sidebar_header }};
     font-size: 24px;
-    font-weight: normal;
     margin: 0 0 5px 0;
     padding: 0;
 }
 
+div.sphinxsidebar h3 {
+	font-weight: bold;
+}
 div.sphinxsidebar h4 {
     font-size: 20px;
+    font-weight: normal;
 }
 
 div.sphinxsidebar h3 a {
@@ -251,18 +256,23 @@ div.body h2,
 div.body h3,
 div.body h4,
 div.body h5,
-div.body h6 {
+div.body h6,
+div.toctree-wrapper p.caption {
     font-family: {{ theme_head_font_family }};
     font-weight: normal;
     margin: 30px 0px 10px 0px;
     padding: 0;
+    padding-top: 70px;
+    margin-top: -70px;
 }
 
 div.body h1 { margin-top: 0; padding-top: 0; font-size: 240%; }
 div.body h2 { font-size: 180%; }
+div.toctree-wrapper p.caption { font-size: 180%; }
 div.body h3 { font-size: 150%; }
 div.body h4 { font-size: 130%; }
 div.body h5 { font-size: 100%; }
+div.body h6 { font-size: 100%; }
 div.body h6 { font-size: 100%; }
 
 a.headerlink {
@@ -766,4 +776,277 @@ nav#breadcrumbs li+li:before {
     div.related {
         display: none;
     }
+}
+
+li p:last-child {
+	margin-bottom: 12px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+dl.class {
+	padding: 3px 3px 3px 5px;
+	margin-top: 7px !important;
+	margin-bottom: 17px !important;
+	border-color: rgba(240, 128, 128, 0.5);
+	border-style: solid;
+}
+
+
+dl.function {
+	padding: 3px 3px 3px 5px;
+	margin-top: 7px !important;
+	margin-bottom: 17px !important;
+	border-color: lightskyblue;
+	border-style: solid;
+}
+
+dl.function dt {
+	margin-bottom: 10px !important;
+}
+
+
+dl.field-list {
+	display: inline;
+}
+
+dl.field-list dd {
+	margin: 0 0 12px 24px;
+	line-height: 24px;
+}
+
+dl.attribute {
+	padding: 3px 3px 3px 5px;
+	margin-bottom: 17px !important;
+	border-color: rgba(119, 136, 153, 0.5);
+	border-style: solid;
+}
+
+dl.method {
+	padding: 3px 3px 3px 5px;
+	margin-bottom: 17px !important;
+	border-color: rgba(32, 178, 170, 0.5);
+	border-style: solid;
+}
+
+
+
+@media screen and (min-width: 875px) {
+	div.sphinxsidebar {
+		width: 250px;
+	}
+
+    header, div.related {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 875px) {
+	div.sphinxsidebar {
+		display: none;
+		position: fixed;
+        z-index: 1000
+	}
+
+	div.sphinxsidebar.opened {
+		display: block;
+	}
+
+    div.sphinxsidebar h1.logo {
+        display: none;
+    }
+
+	div.sphinxsidebarwrapper {
+		max-width: 80%;
+	}
+
+    header {
+        z-index: 1000;
+        position: fixed;
+        padding-left: 30px;
+    }
+
+    div.footer {
+        display: block;
+        width: 80%;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+}
+
+
+div.sphinxsidebar p.caption {
+	font-size: 20px;
+}
+
+div.sphinxsidebar div.sphinxsidebarwrapper {
+	padding-right: 20px !important;
+}
+
+table.longtable {
+	margin-bottom: 20px !important;
+	margin-top: -15px !important;
+}
+
+
+div.body p, ol > li, div.body td {
+	hyphens: None;
+}
+
+img, div.figure {
+	margin: 0 !important;
+}
+
+
+ul > li {
+	text-align: justify;
+}
+
+ul > li > p {
+	margin-bottom: 0;
+}
+
+ol > li > p {
+	margin-bottom: 0;
+}
+
+div.body code.descclassname {
+	display: None;
+}
+
+.wy-table-responsive table td {
+	white-space: normal !important;
+}
+
+.wy-table-responsive {
+	overflow: visible !important;
+}
+
+div.toctree-wrapper.compound > ul > li {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* The following based on:
+
+https://www.aleksandrhovhannisyan.com/blog/dev/responsive-navbar-without-bootstrap/
+https://htmldog.com/techniques/showhide/
+https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+*/
+
+:root {
+    --topnav-bg-color: rgb(51, 51, 51);
+    --topnav-text-color: rgb(255, 255, 255);
+    --topnav-height: 64px;
+}
+
+#topnav {
+    position: fixed;
+    height: var(--topnav-height);
+    background-color: hsl(0, 0%, 20%);
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#topnav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+#topnav a {
+    color: var(--topnav-text-color);
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topnav .menu-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    background-color: var(--topnav-text-color);
+}
+
+#topnav .nav-menu {
+    position: fixed;
+    top: var(--topnav-height);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header nav.container {
+    max-width: 1000px;
+    /*padding-left: 1.4rem;*/
+    padding-right: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.bodywrapper {
+    min-height: 90vh;
+}
+
+div.footer {
+    position: relative;
+    bottom: 0;
+    height: 17px;
+}
+
+nav#rellinks {
+    width: 80%;
+    max-width: 1100px;
+}
+
+nav#rellinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+display: flex;
+}
+
+nav#rellinks ul li{
+    flex:1 0 auto;
+}
+
+nav#rellinks ul li div.rellinks_prev{
+    text-align: left;
+}
+nav#rellinks ul li div.rellinks_next{
+    text-align: right;
+}
+
+
+nav#rellinks li + li::before {
+    content: "";
 }

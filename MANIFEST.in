@@ -1,4 +1,8 @@
+include __pkginfo__.py
 include LICENSE
-include README.md
-recursive-include alabaster *.*
-recursive-exclude alabaster .*.swp
+include requirements.txt
+recursive-exclude **/__pycache__ *
+recursive-include repo_helper_sphinx_theme *.*
+recursive-exclude repo_helper_sphinx_theme .*.swp
+recursive-include repo_helper_sphinx_theme *.pyi
+include repo_helper_sphinx_theme/py.typed

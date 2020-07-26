@@ -18,16 +18,20 @@
     <ul>
       {%- if prev %}
         <li>
-          &larr;
-          <a href="{{ prev.link|e }}" title="Previous document">{{ prev.title }}</a>
-        </li>
+			<div class="rellinks_prev">
+				&larr;
+				<a href="{{ prev.link|e }}" title="Previous document" class="float-left">{{ prev.title }}</a>
+			</div>
+		</li>
       {%- endif %}
       {%- if next %}
         <li>
-          <a href="{{ next.link|e }}" title="Next document">{{ next.title }}</a>
-          &rarr;
-        </li>
-      {%- endif %}
+			<div class="rellinks_next">
+				<a href="{{ next.link|e }}" title="Next document" class="float-right">{{ next.title }}</a>
+				&rarr;
+			</div>
+		</li>
+	  {%- endif %}
     </ul>
   </nav>
 {%- endmacro %}
@@ -41,6 +45,18 @@
 
 {# Nav should appear before content, not after #}
 {%- block content %}
+{# Mobile header #}
+<header id="topnav">
+    <nav class="nav-container container">
+        <h1 class="logo"><a href="{{ pathto(master_doc) }}">{{ project }}</a></h1>
+        <button type="button" class="menu-toggle" aria-label="Open navigation menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </nav>
+</header>
+
 {%- if theme_fixed_sidebar|lower == 'true' %}
   <div class="document">
     {{ sidebar() }}
@@ -105,21 +121,6 @@
     </a>
     {% endif %}
 
-    {% if theme_analytics_id %}
-    <script type="text/javascript">
+	<script type="text/javascript" src="{{ pathto("_static/header.js", True) }}"></script>
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{{ theme_analytics_id }}']);
-      _gaq.push(['_setDomainName', 'none']);
-      _gaq.push(['_setAllowLinker', true]);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-    {% endif %}
 {%- endblock %}
