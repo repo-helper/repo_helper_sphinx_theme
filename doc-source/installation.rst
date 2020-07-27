@@ -32,7 +32,7 @@ The theme can then be enabled by setting it in your ``conf.py`` file:
 Customisation
 -----------------
 
-``repo_helper_sphinx_theme`` is based on the `alabaster <https://github.com/bitprophet/alabaster/>`_ theme..
+``repo_helper_sphinx_theme`` is based on the `alabaster <https://github.com/bitprophet/alabaster/>`_ theme.
 See https://alabaster.readthedocs.io/en/latest/customization.html for information on customising the theme.
 
 
@@ -40,8 +40,7 @@ See https://alabaster.readthedocs.io/en/latest/customization.html for informatio
 Static path for images and/or custom stylesheet
 -----------------------------------------------
 
-If you're using any of the image-related options listed on :doc:`customization`
-(``logo`` or ``touch-icon``) or a :ref:`custom stylesheet <custom-stylesheet>`,
+If you're using any of the image-related options (``logo`` or ``touch-icon``) or a custom stylesheet,
 you'll also want to tell Sphinx where to get these files from. If so, add a
 line like this (changing the path if necessary; see `the Sphinx docs for
 'html_static_path'

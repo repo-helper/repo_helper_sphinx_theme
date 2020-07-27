@@ -104,6 +104,7 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 	:maxdepth: 3
 	:caption: Documentation
 
+	installation
 	contributing
 	Source
 
