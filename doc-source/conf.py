@@ -20,13 +20,13 @@ from __pkginfo__ import __version__
 
 github_url = "https://github.com/domdfcoding/repo_helper_sphinx_theme"
 
-rst_prolog = f""".. |pkgname| replace:: repo_helper_sphinx_theme
-.. |pkgname2| replace:: ``repo_helper_sphinx_theme``
+rst_prolog = f""".. |pkgname| replace:: repo_helper Theme
+.. |pkgname2| replace:: ``repo_helper Theme``
 .. |browse_github| replace:: `Browse the GitHub Repository <{github_url}>`__
 """
 
 author = "Dominic Davis-Foster"
-project = "repo_helper_sphinx_theme"
+project = "repo_helper Theme"
 slug = re.sub(r'\W+', '-', project.lower())
 release = version = __version__
 copyright = "2020 Dominic Davis-Foster"  # pylint: disable=redefined-builtin
@@ -93,12 +93,11 @@ html_theme_options = {
 		}
 html_theme_path = ["../.."]
 html_show_sourcelink = True  # True will show link to source
+
 html_context = {
 		}
 
 htmlhelp_basename = slug
-
-typehints_fully_qualified = True
 
 latex_documents = [('index', f'{slug}.tex', project, author, 'manual')]
 man_pages = [('index', slug, project, [author], 1)]

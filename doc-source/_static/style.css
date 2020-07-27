@@ -1,7 +1,7 @@
 /* This file is managed by 'repo_helper'. Don't edit it directly. */
 
 li p:last-child {
-	margin-bottom: 12px !important;
+	margin-bottom: 12px;
 }
 
 html {

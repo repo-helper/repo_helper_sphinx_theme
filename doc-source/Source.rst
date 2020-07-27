@@ -2,7 +2,7 @@
 Downloading source code
 =========================
 
-The ``repo_helper_sphinx_theme`` source code is available on GitHub,
+The ``repo_helper Theme`` source code is available on GitHub,
 and can be accessed from the following URL: https://github.com/domdfcoding/repo_helper_sphinx_theme"
 
 If you have ``git`` installed, you can clone the repository with the following command:
@@ -30,7 +30,7 @@ If you have ``git`` installed, you can clone the repository with the following c
 Building from source
 -----------------------
 
-The recommended way to build ``repo_helper_sphinx_theme`` is to use `tox <https://tox.readthedocs.io/en/latest/>`_:
+The recommended way to build ``repo_helper Theme`` is to use `tox <https://tox.readthedocs.io/en/latest/>`_:
 
 .. prompt:: bash
 

@@ -102,7 +102,7 @@ Installation
 
 .. start installation
 
-``repo_helper_sphinx_theme`` can be installed from PyPI.
+``repo_helper Theme`` can be installed from PyPI.
 
 To install with ``pip``:
 

@@ -1,6 +1,9 @@
 # Configuration for 'repo_helper' (https://github.com/domdfcoding/repo_helper
 ---
-modname: "repo_helper_sphinx_theme"
+modname: "repo_helper Theme"
+import_name: "repo_helper_sphinx_theme"
+repo_name: "repo_helper_sphinx_theme"
+pypi_name: "repo_helper_sphinx_theme"
 copyright_years: "2020"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"

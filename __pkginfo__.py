@@ -40,7 +40,7 @@ __copyright__ = """
 """
 
 __version__ = "0.0.0"
-modname = "repo_helper_sphinx_theme"
+modname = "repo_helper Theme"
 pypi_name = "repo_helper_sphinx_theme"
 import_name = "repo_helper_sphinx_theme"
 __license__ = "BSD License"
