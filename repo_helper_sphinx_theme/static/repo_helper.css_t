@@ -1050,3 +1050,7 @@ nav#rellinks ul li div.rellinks_next{
 nav#rellinks li + li::before {
     content: "";
 }
+
+table.align-default {
+    margin-left: 0;
+}
