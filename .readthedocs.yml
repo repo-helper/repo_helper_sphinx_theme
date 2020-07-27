@@ -17,4 +17,3 @@ python:
   install:
     - requirements: requirements.txt
     - requirements: doc-source/requirements.txt
-    - "-e ."

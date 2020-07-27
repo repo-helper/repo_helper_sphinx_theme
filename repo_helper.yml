@@ -12,7 +12,7 @@ version: "0.0.0"
 license: "BSD"
 short_desc: "Sphinx Theme for repo_helper."
 
-sphinx_html_theme: alabaster
+sphinx_html_theme: repo_helper_sphinx_theme
 
 enable_conda: False
 enable_tests: False
