@@ -78,7 +78,7 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/repo_helper_sphinx_theme
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/repo_helper_sphinx_theme/v0.0.1
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/repo_helper_sphinx_theme/v0.0.2
 	:target: https://github.com/domdfcoding/repo_helper_sphinx_theme/pulse
 	:alt: GitHub commits since tagged version
 

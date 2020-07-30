@@ -51,7 +51,7 @@ __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
 
 __license__: str = "BSD"
-__version__: str = "0.0.1"
+__version__: str = "0.0.2"
 __email__: str = "dominic@davis-foster.co.uk"
 
 __all__ = ["get_path", "update_context", "setup"]
