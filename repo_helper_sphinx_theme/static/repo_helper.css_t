@@ -53,7 +53,7 @@
 {%- set theme_relbar_border = theme_relbar_border or theme_gray_2 -%}
 
 
-@import url("basic.css");
+@import url("alabaster.css");
 
 /* -- page layout ----------------------------------------------------------- */
 
@@ -891,7 +891,7 @@ div.sphinxsidebar div.sphinxsidebarwrapper {
 
 table.longtable {
 	margin-bottom: 20px !important;
-	margin-top: -15px !important;
+	margin-top: -10px !important;
 }
 
 

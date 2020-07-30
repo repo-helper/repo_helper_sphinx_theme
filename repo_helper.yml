@@ -36,9 +36,11 @@ classifiers:
 #  - "Development Status :: 7 - Inactive"
   - 'Intended Audience :: Developers'
   - 'Topic :: Utilities'
-  - "Intended Audience :: Developers"
   - "Topic :: Documentation"
   - "Topic :: Software Development :: Documentation"
+  - 'Framework :: Sphinx'
+  - 'Framework :: Sphinx :: Theme'
+  - 'Environment :: Web Environment'
 
 exclude_files:
   - setup
