@@ -44,9 +44,9 @@ modname = "repo_helper Theme"
 pypi_name = "repo_helper_sphinx_theme"
 import_name = "repo_helper_sphinx_theme"
 __license__ = "BSD License"
-short_desc = "Sphinx Theme for repo_helper."
-__author__ = author = "Dominic Davis-Foster"
-author_email = "dominic@davis-foster.co.uk"
+short_desc = 'Sphinx Theme for repo_helper.'
+__author__ = author = 'Dominic Davis-Foster'
+author_email = 'dominic@davis-foster.co.uk'
 github_username = "domdfcoding"
 web = github_url = "https://github.com/domdfcoding/repo_helper_sphinx_theme"
 repo_root = pathlib.Path(__file__).parent
