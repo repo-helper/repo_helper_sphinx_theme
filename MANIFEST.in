@@ -1,7 +1,7 @@
 include __pkginfo__.py
 include LICENSE
 include requirements.txt
-recursive-exclude **/__pycache__ *
+prune **/__pycache__
 recursive-include repo_helper_sphinx_theme *.*
 recursive-exclude repo_helper_sphinx_theme .*.swp
 recursive-include repo_helper_sphinx_theme *.pyi
