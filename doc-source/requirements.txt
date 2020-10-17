@@ -1,9 +1,8 @@
-alabaster>=0.7.12
+autodocsumm>=0.2.0
 default_values>=0.2.0
 extras_require>=0.2.0
 repo_helper_sphinx_theme>=0.0.2
 seed_intersphinx_mapping>=0.1.1
-sphinx>=3.0.3
 sphinx-copybutton>=0.2.12
 sphinx-notfound-page>=0.5
 sphinx-prompt>=1.1.0
