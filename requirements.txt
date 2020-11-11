@@ -1,2 +1,2 @@
-alabaster
+alabaster>=0.7.12
 sphinx>=3.0.3
