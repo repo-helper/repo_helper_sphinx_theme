@@ -49,7 +49,6 @@ from alabaster import get_path, update_context
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
-
 __license__: str = "BSD"
 __version__: str = "0.0.2"
 __email__: str = "dominic@davis-foster.co.uk"
@@ -58,12 +57,14 @@ __all__ = ["get_path", "update_context", "setup"]
 
 
 def setup(app):
-	# add_html_theme is new in Sphinx 1.6+
+
 	alabaster.setup(app)
-	if hasattr(app, "add_html_theme"):
-		theme_path = os.path.abspath(os.path.dirname(__file__))
-		app.add_html_theme("repo_helper_sphinx_theme", theme_path)
+
+	theme_path = os.path.abspath(os.path.dirname(__file__))
+	app.add_html_theme("repo_helper_sphinx_theme", theme_path)
+
 	app.connect("html-page-context", update_context)
+
 	return {
 			"version": __version__,
 			"parallel_read_safe": True,
