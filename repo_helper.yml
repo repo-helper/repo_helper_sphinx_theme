@@ -29,12 +29,8 @@ python_versions:
   - '3.9'
   - '3.10-dev'
 
-
 classifiers:
   - 'Development Status :: 4 - Beta'
-#  - "Development Status :: 5 - Production/Stable"
-#  - "Development Status :: 6 - Mature"
-#  - "Development Status :: 7 - Inactive"
   - 'Intended Audience :: Developers'
   - 'Topic :: Utilities'
   - "Topic :: Documentation"
@@ -43,5 +39,6 @@ classifiers:
   - 'Framework :: Sphinx :: Theme'
   - 'Environment :: Web Environment'
 
-exclude_files:
-  - setup
+entry_points:
+  sphinx.html_themes:
+    - "repo_helper_sphinx_theme = repo_helper_sphinx_theme"

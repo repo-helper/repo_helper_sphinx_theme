@@ -45,7 +45,7 @@ import os
 
 # 3rd party
 import alabaster  # type: ignore
-from alabaster import get_path, update_context  # type: ignore
+from alabaster import get_path, update_context
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
