@@ -13,7 +13,7 @@ sys.path.append(os.path.abspath(".."))
 # this package
 from __pkginfo__ import __version__
 
-github_username = "domdfcoding"
+github_username = "repo-helper"
 github_repository = "repo_helper_sphinx_theme"
 github_url = f"https://github.com/{github_username}/{github_repository}"
 
@@ -70,7 +70,7 @@ html_theme = "repo_helper_sphinx_theme"
 html_theme_options = {
 		"page_width": "1200px",
 		"logo_name": "true",
-		"github_user": "domdfcoding",
+		"github_user": "repo-helper",
 		"github_repo": "repo_helper_sphinx_theme",
 		"description": "Sphinx Theme for repo_helper.",
 		"github_banner": "true",
