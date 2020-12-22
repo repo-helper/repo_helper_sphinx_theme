@@ -42,6 +42,7 @@ Sphinx Theme for repo_helper.
 
 # stdlib
 import os
+from typing import Any, Dict
 
 # 3rd party
 import alabaster  # type: ignore
@@ -56,7 +57,12 @@ __email__: str = "dominic@davis-foster.co.uk"
 __all__ = ["get_path", "update_context", "setup"]
 
 
-def setup(app):
+def setup(app) -> Dict[str, Any]:
+	"""
+	Setup Sphinx app.
+
+	:param app:
+	"""
 
 	alabaster.setup(app)
 
