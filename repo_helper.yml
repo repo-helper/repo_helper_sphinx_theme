@@ -43,3 +43,8 @@ classifiers:
 entry_points:
   sphinx.html_themes:
     - "repo_helper_sphinx_theme = repo_helper_sphinx_theme"
+
+keywords:
+  - sphinx
+  - documentation
+  - repo-helper
