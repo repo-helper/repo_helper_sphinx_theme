@@ -13,6 +13,7 @@ version: "0.0.2"
 license: "BSD"
 short_desc: "Sphinx Theme for repo_helper."
 
+use_whey: true
 sphinx_html_theme: repo_helper_sphinx_theme
 
 enable_conda: False

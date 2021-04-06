@@ -1,6 +1,6 @@
 [build-system]
-requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
-build-backend = "setuptools.build_meta"
+requires = [ "whey",]
+build-backend = "whey"
 
 [project]
 name = "repo_helper_sphinx_theme"
@@ -30,6 +30,26 @@ extras = "all"
 license-key = "BSD-3-Clause"
 
 [tool.importcheck]
+
+[tool.whey]
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Theme",
+    "Intended Audience :: Developers",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Utilities",
+]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "BSD-3-Clause"
+additional-files = [
+    "recursive-include repo_helper_sphinx_theme *.*",
+    "recursive-exclude repo_helper_sphinx_theme .*.swp",
+]
 
 [project.entry-points."sphinx.html_themes"]
 repo_helper_sphinx_theme = "repo_helper_sphinx_theme"

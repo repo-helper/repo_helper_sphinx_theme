@@ -1,8 +1,0 @@
-include __pkginfo__.py
-include LICENSE
-include requirements.txt
-prune **/__pycache__
-recursive-include repo_helper_sphinx_theme *.*
-recursive-exclude repo_helper_sphinx_theme .*.swp
-recursive-include repo_helper_sphinx_theme *.pyi
-include repo_helper_sphinx_theme/py.typed
