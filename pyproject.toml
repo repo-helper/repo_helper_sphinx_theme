@@ -7,12 +7,12 @@ name = "repo_helper_sphinx_theme"
 version = "0.0.2"
 description = "Sphinx Theme for repo_helper."
 readme = "README.rst"
-keywords = [ "sphinx", "documentation", "repo-helper",]
+keywords = [ "documentation", "repo-helper", "sphinx",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
 
 [[project.authors]]
-email = "dominic@davis-foster.co.uk"
 name = "Dominic Davis-Foster"
+email = "dominic@davis-foster.co.uk"
 
 
 [project.license]
@@ -23,11 +23,6 @@ Homepage = "https://github.com/repo-helper/repo_helper_sphinx_theme"
 "Issue Tracker" = "https://github.com/repo-helper/repo_helper_sphinx_theme/issues"
 "Source Code" = "https://github.com/repo-helper/repo_helper_sphinx_theme"
 Documentation = "https://repo_helper_sphinx_theme.readthedocs.io/en/latest"
-
-[tool.mkrecipe]
-conda-channels = [ "repo-helper",]
-extras = "all"
-license-key = "BSD-3-Clause"
 
 [tool.importcheck]
 
@@ -49,6 +44,82 @@ license-key = "BSD-3-Clause"
 additional-files = [
     "recursive-include repo_helper_sphinx_theme *.*",
     "recursive-exclude repo_helper_sphinx_theme .*.swp",
+]
+
+[tool.sphinx-pyproject]
+github_username = "repo-helper"
+github_repository = "repo_helper_sphinx_theme"
+author = "Dominic Davis-Foster"
+project = "repo-helper Theme"
+copyright = "2020 Dominic Davis-Foster"
+language = "en"
+package_root = "repo_helper_sphinx_theme"
+extensions = [
+    "sphinx_toolbox",
+    "sphinx_toolbox.more_autodoc",
+    "sphinx_toolbox.more_autosummary",
+    "sphinx_toolbox.documentation_summary",
+    "sphinx_toolbox.tweaks.param_dash",
+    "sphinx_toolbox.tweaks.latex_layout",
+    "sphinx_toolbox.tweaks.latex_toc",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.mathjax",
+    "sphinxcontrib.extras_require",
+    "sphinx.ext.todo",
+    "sphinxemoji.sphinxemoji",
+    "notfound.extension",
+    "sphinx_copybutton",
+    "sphinxcontrib.default_values",
+    "sphinxcontrib.toctree_plus",
+    "sphinx_debuginfo",
+    "seed_intersphinx_mapping",
+]
+sphinxemoji_style = "twemoji"
+gitstamp_fmt = "%d %b %Y"
+templates_path = [ "_templates",]
+html_static_path = [ "_static",]
+source_suffix = ".rst"
+master_doc = "index"
+suppress_warnings = [ "image.nonlocal_uri",]
+pygments_style = "default"
+html_theme = "repo_helper_sphinx_theme"
+html_theme_path = [ "../..",]
+html_show_sourcelink = true
+toctree_plus_types = [
+    "class",
+    "confval",
+    "data",
+    "directive",
+    "enum",
+    "exception",
+    "flag",
+    "function",
+    "namedtuple",
+    "protocol",
+    "role",
+    "typeddict",
+]
+add_module_names = false
+hide_none_rtype = true
+all_typevars = true
+overloads_location = "bottom"
+autodoc_exclude_members = [
+    "__dict__",
+    "__class__",
+    "__dir__",
+    "__weakref__",
+    "__module__",
+    "__annotations__",
+    "__orig_bases__",
+    "__parameters__",
+    "__subclasshook__",
+    "__init_subclass__",
+    "__attrs_attrs__",
+    "__init__",
+    "__new__",
+    "__getnewargs__",
+    "__abstractmethods__",
+    "__hash__",
 ]
 
 [project.entry-points."sphinx.html_themes"]
