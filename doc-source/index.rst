@@ -5,6 +5,7 @@ repo_helper_sphinx_theme
 .. start short_desc
 
 .. documentation-summary::
+	:meta:
 
 .. end short_desc
 
@@ -124,12 +125,18 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 	contributing
 	Source
 
+.. sidebar-links::
+	:caption: Links
+	:github:
+	:pypi: repo_helper_sphinx_theme
+
+
 .. start links
 
 .. only:: html
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	`Browse the GitHub Repository <https://github.com/repo-helper/repo_helper_sphinx_theme>`__
+	:github:repo:`Browse the GitHub Repository <repo-helper/repo_helper_sphinx_theme>`
 
 .. end links
