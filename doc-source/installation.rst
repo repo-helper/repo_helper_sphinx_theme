@@ -25,7 +25,7 @@ The theme can then be enabled by setting it in your ``conf.py`` file:
 
 .. code-block:: python
 
-	html_theme = 'repo_helper_sphinx_theme'
+	html_theme = "repo_helper_sphinx_theme"
 
 
 
@@ -48,4 +48,4 @@ line like this (changing the path if necessary; see `the Sphinx docs for
 
 .. code-block:: python
 
-    html_static_path = ['_static']
+    html_static_path = ["_static"]
