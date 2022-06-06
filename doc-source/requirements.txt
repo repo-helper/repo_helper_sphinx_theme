@@ -1,5 +1,6 @@
 default-values>=0.5.0
 extras-require>=0.2.0
+html-section>=0.1.0
 repo-helper-sphinx-theme>=0.0.2
 seed-intersphinx-mapping>=0.3.1
 sphinx-copybutton>=0.2.12
