@@ -120,10 +120,10 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 
 .. toctree::
 	:maxdepth: 3
-	:caption: Documentation
 
 	installation
 	contributing
+	license
 	Source
 
 .. sidebar-links::
