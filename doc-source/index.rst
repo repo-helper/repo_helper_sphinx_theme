@@ -96,7 +96,7 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 		:alt: GitHub top language
 
 	.. |commits-since| github-shield::
-		:commits-since: v0.0.2
+		:commits-since: v0.0.3
 		:alt: GitHub commits since tagged version
 
 	.. |commits-latest| github-shield::

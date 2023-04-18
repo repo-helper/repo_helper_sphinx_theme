@@ -88,7 +88,7 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 .. |language| image:: https://img.shields.io/github/languages/top/repo-helper/repo_helper_sphinx_theme
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/repo-helper/repo_helper_sphinx_theme/v0.0.2
+.. |commits-since| image:: https://img.shields.io/github/commits-since/repo-helper/repo_helper_sphinx_theme/v0.0.3
 	:target: https://github.com/repo-helper/repo_helper_sphinx_theme/pulse
 	:alt: GitHub commits since tagged version
 
