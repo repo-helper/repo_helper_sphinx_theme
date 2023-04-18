@@ -33,7 +33,7 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 		  - |license| |language| |requires|
 
 	.. |docs| rtfd-shield::
-		:project: repo_helper_sphinx_theme
+		:project: repo-helper-sphinx-theme
 		:alt: Documentation Build Status
 
 	.. |docs_check| actions-shield::

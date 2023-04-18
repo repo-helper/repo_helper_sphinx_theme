@@ -29,8 +29,8 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 	* - Other
 	  - |license| |language| |requires|
 
-.. |docs| image:: https://img.shields.io/readthedocs/repo_helper_sphinx_theme/latest?logo=read-the-docs
-	:target: https://repo_helper_sphinx_theme.readthedocs.io/en/latest
+.. |docs| image:: https://img.shields.io/readthedocs/repo-helper-sphinx-theme/latest?logo=read-the-docs
+	:target: https://repo-helper-sphinx-theme.readthedocs.io/en/latest
 	:alt: Documentation Build Status
 
 .. |docs_check| image:: https://github.com/repo-helper/repo_helper_sphinx_theme/workflows/Docs%20Check/badge.svg
