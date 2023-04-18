@@ -22,7 +22,7 @@ file = "LICENSE"
 Homepage = "https://github.com/repo-helper/repo_helper_sphinx_theme"
 "Issue Tracker" = "https://github.com/repo-helper/repo_helper_sphinx_theme/issues"
 "Source Code" = "https://github.com/repo-helper/repo_helper_sphinx_theme"
-Documentation = "https://repo_helper_sphinx_theme.readthedocs.io/en/latest"
+Documentation = "https://repo-helper-sphinx-theme.readthedocs.io/en/latest"
 
 [tool.importcheck]
 
