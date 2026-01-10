@@ -100,7 +100,7 @@ This is a modified version of the `alabaster <https://github.com/bitprophet/alab
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/repo_helper_sphinx_theme
-	:target: https://pypi.org/project/repo_helper_sphinx_theme/
+	:target: https://pypistats.org/packages/repo_helper_sphinx_theme
 	:alt: PyPI - Downloads
 
 .. end shields
