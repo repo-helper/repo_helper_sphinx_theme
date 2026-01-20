@@ -118,6 +118,6 @@ To install with ``pip``:
 
 .. code-block:: bash
 
-	$ python -m pip install repo_helper_sphinx_theme
+	$ python -m pip install repo-helper-sphinx-theme
 
 .. end installation
