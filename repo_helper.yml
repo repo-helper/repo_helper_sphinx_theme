@@ -10,7 +10,7 @@ email: "dominic@davis-foster.co.uk"
 username: "repo-helper"
 assignee: "domdfcoding"
 version: "0.0.3"
-license: "BSD"
+license: "BSD-3-Clause"
 short_desc: "Sphinx Theme for repo_helper."
 
 use_whey: true
